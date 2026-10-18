@@ -1,8 +1,139 @@
-<h1>Contact Me</h1>
-<p>Email: abdsarim9@gmail.com</p>
-<p>Address:</p>
-<p>
-  Manglawar<br />
-  Swat<br />
-  Pakistan <br />
-</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Abdullah Jelani — sales, marketing or web project enquiries welcome." />
+    <title>Contact — Abdullah Jelani</title>
+    <link rel="icon" type="image/jpeg" href="../Assets/images/my-pic.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../Assets/css/style.css" />
+    <style>
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+        margin-top: 20px;
+      }
+      .contact-card {
+        background: var(--c-bg-soft);
+        border-radius: var(--radius-md);
+        padding: 22px;
+        text-align: center;
+        border-top: 4px solid var(--c-primary);
+        transition: transform 0.3s ease;
+      }
+      .contact-card:hover {
+        transform: translateY(-4px);
+      }
+      .contact-card i {
+        font-size: 2rem;
+        color: var(--c-primary);
+        margin-bottom: 10px;
+      }
+      .contact-card h3 {
+        color: var(--c-text);
+        margin-bottom: 6px;
+        font-size: 1rem;
+      }
+      .contact-card a {
+        color: var(--c-text-soft);
+        text-decoration: none;
+        word-break: break-word;
+      }
+      .contact-card a:hover {
+        color: var(--c-primary);
+      }
+      .contact-card p {
+        color: var(--c-text-soft);
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container" style="max-width: 820px;">
+      <header class="header">
+        <img
+          src="../Assets/images/my-pic.jpg"
+          alt="Abdullah Jelani"
+          class="profile-img"
+        />
+        <h1>Get in Touch</h1>
+        <p class="title">Sales · Marketing · Web Projects</p>
+        <p class="tagline">
+          Whether it's a sales conversation, a brand-building idea or a web
+          project — my inbox is open.
+        </p>
+      </header>
+
+      <section class="contact-grid" aria-label="Contact options">
+        <article class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <a href="mailto:abdullah.jelani20@gmail.com">abdullah.jelani20@gmail.com</a>
+        </article>
+
+        <article class="contact-card">
+          <i class="fas fa-phone"></i>
+          <h3>Mobile</h3>
+          <a href="tel:+923263398681">+92 326 3398681</a>
+        </article>
+
+        <article class="contact-card">
+          <i class="fab fa-linkedin"></i>
+          <h3>LinkedIn</h3>
+          <a
+            href="https://www.linkedin.com/in/abdullah-jelani-1249b9ba"
+            target="_blank"
+            rel="noopener"
+            >abdullah-jelani</a
+          >
+        </article>
+
+        <article class="contact-card">
+          <i class="fab fa-github"></i>
+          <h3>GitHub</h3>
+          <a
+            href="https://github.com/AbdullahJelani"
+            target="_blank"
+            rel="noopener"
+            >AbdullahJelani</a
+          >
+        </article>
+
+        <article class="contact-card" style="grid-column: 1 / -1;">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Address</h3>
+          <p>
+            Village Shakhorai, P/O Manglor, Tehsil Babozai,<br />
+            District Swat, KPK, Pakistan
+          </p>
+        </article>
+      </section>
+
+      <section class="block" style="margin-top: 30px;">
+        <h2 class="section-title">
+          <i class="fas fa-bullseye"></i> Roles I'm Interested In
+        </h2>
+        <ul class="focus-list">
+          <li><strong>Primary:</strong> Field Sales &amp; Area Management (B2B, pharma, FMCG, channel sales).</li>
+          <li><strong>Secondary:</strong> Digital Marketing &amp; Digital Sales (SEO, social media, paid ads, content, analytics).</li>
+          <li><strong>Tertiary:</strong> Sales Operations, Business Development and Sales Training.</li>
+        </ul>
+      </section>
+
+      <div class="text-center">
+        <a href="../index.html" class="back-btn" aria-label="Back to home">
+          <i class="fas fa-arrow-left"></i> Back to Portfolio
+        </a>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2026 Abdullah Jelani. All rights reserved.</p>
+      </footer>
+    </main>
+  </body>
+</html>
