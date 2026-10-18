@@ -3,252 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abdullah's Portfolio</title>
+    <meta name="description" content="Abdullah Jelani — Web Developer, Digital Marketer & Sales Leader from Swat, Pakistan. 12+ years in pharmaceutical sales, transitioning into digital marketing and web development." />
+    <meta name="keywords" content="Abdullah Jelani, Web Developer, Digital Marketing, SEO, Sales Manager, Swat Pakistan, Portfolio" />
+    <meta name="author" content="Abdullah Jelani" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Abdullah Jelani — Portfolio" />
+    <meta property="og:description" content="Web Developer, Digital Marketer & Sales Leader from Swat, Pakistan." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://abdullahjelani.github.io/My-Portfolio/" />
+
+    <title>Abdullah Jelani — Portfolio</title>
+    <link rel="icon" type="image/jpeg" href="Assets/images/my-pic.jpg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <style>
-      /* RESET */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        min-height: 100vh;
-        padding: 40px 20px;
-      }
-
-      .container {
-        max-width: 1100px;
-        margin: 0 auto;
-        background: white;
-        border-radius: 20px;
-        padding: 50px;
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-      }
-
-      .header {
-        text-align: center;
-        margin-bottom: 40px;
-      }
-
-      .profile-img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border: 4px solid #667eea;
-        object-fit: cover;
-        margin-bottom: 20px;
-      }
-
-      .header h1 {
-        color: #2d3748;
-        font-size: 2.5rem;
-        margin-bottom: 5px;
-      }
-
-      .header .title {
-        color: #667eea;
-        font-size: 1.2rem;
-        font-weight: 500;
-      }
-
-      .header p {
-        color: #4a5568;
-        margin-top: 10px;
-        font-size: 1.1rem;
-      }
-
-      .nav-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        flex-wrap: wrap;
-        margin: 30px 0 40px 0;
-      }
-
-      .nav-btn {
-        display: inline-block;
-        background: #667eea;
-        color: white !important;
-        padding: 12px 30px;
-        border-radius: 50px;
-        text-decoration: none !important;
-        font-weight: 500;
-        transition: all 0.3s ease;
-      }
-
-      .nav-btn:hover {
-        background: #5a67d8;
-        transform: translateY(-3px);
-        box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
-      }
-
-      .nav-btn-outline {
-        background: transparent;
-        color: #667eea !important;
-        border: 2px solid #667eea;
-      }
-
-      .nav-btn-outline:hover {
-        background: #667eea;
-        color: white !important;
-      }
-
-      .section-title {
-        color: #2d3748;
-        font-size: 1.8rem;
-        margin: 40px 0 20px 0;
-        text-align: center;
-      }
-
-      .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 25px;
-        margin-top: 20px;
-      }
-
-      .project-card {
-        background: #f7fafc;
-        border-radius: 15px;
-        overflow: hidden;
-        transition: transform 0.3s ease;
-      }
-
-      .project-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-      }
-
-      .project-card img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-      }
-
-      .project-card .project-info {
-        padding: 20px;
-      }
-
-      .project-card h3 {
-        color: #2d3748;
-        margin-bottom: 8px;
-      }
-
-      .project-card p {
-        color: #4a5568;
-        font-size: 0.95rem;
-        margin-bottom: 15px;
-      }
-
-      .project-link {
-        display: inline-block;
-        color: #667eea;
-        text-decoration: none;
-        font-weight: 500;
-      }
-
-      .project-link:hover {
-        text-decoration: underline;
-      }
-
-      .skills {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-        margin: 20px 0;
-      }
-
-      .skill-tag {
-        background: #e2e8f0;
-        color: #2d3748;
-        padding: 8px 20px;
-        border-radius: 50px;
-        font-size: 0.9rem;
-      }
-
-      .contact-section {
-        text-align: center;
-        margin-top: 50px;
-        padding-top: 40px;
-        border-top: 2px solid #e2e8f0;
-      }
-
-      .contact-section h2 {
-        color: #2d3748;
-        margin-bottom: 15px;
-      }
-
-      .contact-section p {
-        color: #4a5568;
-        margin-bottom: 20px;
-      }
-
-      .footer {
-        text-align: center;
-        margin-top: 40px;
-        padding-top: 20px;
-        border-top: 1px solid #e2e8f0;
-        color: #718096;
-        font-size: 0.9rem;
-      }
-
-      .social-links {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        margin: 15px 0;
-      }
-
-      .social-links a {
-        color: #667eea;
-        font-size: 1.5rem;
-        text-decoration: none;
-        transition: color 0.3s ease;
-      }
-
-      .social-links a:hover {
-        color: #5a67d8;
-      }
-
-      @media (max-width: 768px) {
-        .container {
-          padding: 25px;
-        }
-        .header h1 {
-          font-size: 2rem;
-        }
-        .projects-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="Assets/css/style.css" />
   </head>
   <body>
     <div class="container">
-      <!-- HEADER -->
-      <div class="header">
+      <!-- HERO -->
+      <header class="header">
         <img
           src="Assets/images/my-pic.jpg"
-          alt="Abdullah"
+          alt="Abdullah Jelani"
           class="profile-img"
         />
         <h1>Abdullah Jelani</h1>
-        <p class="title">Web Developer, Designer & Digital Marketer</p>
-        <p>
-          Building beautiful, functional web experiences from Swat, Pakistan
+        <p class="title">Digital Marketing · Sales · Brand Growth</p>
+        <p class="tagline">
+          Web developer & digital marketer from Swat, Pakistan —
+          12+ years in pharmaceutical sales, now building brands online.
         </p>
-      </div>
+      </header>
 
-      <!-- NAVIGATION BUTTONS -->
-      <div class="nav-buttons">
+      <!-- PRIMARY NAVIGATION -->
+      <nav class="nav-buttons" aria-label="Primary">
         <a href="Public/about.html" class="nav-btn"
           ><i class="fas fa-user"></i> About Me</a
         >
@@ -259,72 +50,375 @@
           href="Assets/resume/abdullah-resume.pdf"
           class="nav-btn"
           target="_blank"
+          rel="noopener"
           ><i class="fas fa-file-pdf"></i> Resume</a
         >
-      </div>
+        <a
+          href="https://github.com/AbdullahJelani"
+          class="nav-btn nav-btn-outline"
+          target="_blank"
+          rel="noopener"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+      </nav>
+
+      <!-- CAREER FOCUS -->
+      <section class="block" aria-labelledby="focus-heading">
+        <h2 id="focus-heading" class="section-title">
+          <i class="fas fa-bullseye"></i> Career Focus
+        </h2>
+        <ul class="focus-list">
+          <li>
+            <strong>Primary:</strong> Field Sales &amp; Area Management roles
+            (B2B, pharma, FMCG, channel sales).
+          </li>
+          <li>
+            <strong>Secondary:</strong> Digital Marketing &amp; Digital Sales
+            roles (SEO, social media, paid ads, content, analytics).
+          </li>
+          <li>
+            <strong>Tertiary:</strong> Sales Operations, Business Development
+            and Sales Training.
+          </li>
+        </ul>
+      </section>
+
+      <!-- ABOUT / SUMMARY -->
+      <section class="block" aria-labelledby="summary-heading">
+        <h2 id="summary-heading" class="section-title">
+          <i class="fas fa-user-tie"></i> Professional Summary
+        </h2>
+        <p class="prose">
+          Results-oriented sales professional with 12+ years of progressive
+          experience in pharmaceutical field sales, territory management and
+          team leadership. Currently learning digital marketing, with active
+          certifications from Google Skillshop and FreeCodeCamp and a live
+          portfolio managing organic Facebook, Instagram and website presence
+          for a health brand. I combine sharp commercial instincts with new
+          digital skills to drive measurable brand and pipeline growth.
+        </p>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="block" aria-labelledby="exp-heading">
+        <h2 id="exp-heading" class="section-title">
+          <i class="fas fa-briefcase"></i> Professional Experience
+        </h2>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="t-head">
+              <h3>Sales Manager — NutraMerck (Consumer Portfolio)</h3>
+              <span class="t-date">Oct 2024 – Dec 2025</span>
+            </div>
+            <ul class="t-bullets">
+              <li>
+                Led end-to-end sales operations across Swat, Timergara and
+                Mardan territories for the Consumer Health portfolio.
+              </li>
+              <li>
+                Drove territory growth through structured doctor coverage,
+                retailer activation and distributor alignment.
+              </li>
+            </ul>
+          </li>
+
+          <li class="timeline-item">
+            <div class="t-head">
+              <h3>
+                District Sales Manager — Saffron Pharma (Cardio-Metabolic)
+              </h3>
+              <span class="t-date">Jun 2022 – Sep 2024</span>
+            </div>
+            <ul class="t-bullets">
+              <li>
+                Managed the cardio-metabolic portfolio across Swat, Timergara
+                and Mardan; consistently met or exceeded assigned targets.
+              </li>
+              <li>
+                Built and coached a high-performing field team of medical
+                representatives across three districts.
+              </li>
+            </ul>
+          </li>
+
+          <li class="timeline-item">
+            <div class="t-head">
+              <h3>
+                Senior District Sales Manager — Himont Pharma
+                (Cardio-Metabolic)
+              </h3>
+              <span class="t-date">Sep 2020 – May 2022</span>
+            </div>
+            <ul class="t-bullets">
+              <li>
+                Hired as Senior DSM in recognition of prior performance; led the
+                cardio-metabolic business in three districts.
+              </li>
+              <li>
+                Strengthened market share through data-driven territory
+                planning and stakeholder engagement.
+              </li>
+            </ul>
+          </li>
+
+          <li class="timeline-item">
+            <div class="t-head">
+              <h3>
+                Territory Manager / Senior TM / Area Sales Manager — OBS
+                Pakistan (Cardio-Metabolic)
+              </h3>
+              <span class="t-date">Feb 2015 – Sep 2020</span>
+            </div>
+            <ul class="t-bullets">
+              <li>
+                Three promotions in five years (TM → Senior TM → ASM) on the
+                strength of consistent sales performance.
+              </li>
+              <li>
+                Successfully launched C-Yalta (duloxetine) and Xovat
+                (rosuvastatin) in Mingora — both brands now lead their
+                segments.
+              </li>
+              <li>
+                Secured #2 national rank in OBS Pakistan for 2015–16; awarded a
+                3-day family trip to PC Bhurban.
+              </li>
+            </ul>
+          </li>
+
+          <li class="timeline-item">
+            <div class="t-head">
+              <h3>
+                Sales Promotion Officer — CCL Pharmaceuticals
+                (Cardio-Metabolic)
+              </h3>
+              <span class="t-date">Nov 2013 – Feb 2015</span>
+            </div>
+            <ul class="t-bullets">
+              <li>
+                Began pharmaceutical sales career covering Swat territory;
+                completed Field Force Development Program-1.
+              </li>
+            </ul>
+          </li>
+
+          <li class="timeline-item">
+            <div class="t-head">
+              <h3>Admin &amp; Accountant — Al-Hayat Public School, Swat</h3>
+              <span class="t-date">Jan 2011 – Oct 2013</span>
+            </div>
+            <ul class="t-bullets">
+              <li>
+                Managed school administration, accounts and daily operations
+                before transitioning into pharma sales.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <!-- DIGITAL MARKETING PORTFOLIO -->
+      <section class="block" aria-labelledby="dm-heading">
+        <h2 id="dm-heading" class="section-title">
+          <i class="fas fa-chart-line"></i> Digital Marketing Portfolio
+        </h2>
+        <p class="prose">
+          Managing Facebook, Instagram and website presence for a
+          health-supplement brand with hands-on (organic) content, copywriting
+          and posting workflows.
+        </p>
+        <ul class="focus-list">
+          <li>
+            <strong>Active channels:</strong> Facebook (Meta Business Suite),
+            Instagram and a brand website.
+          </li>
+          <li>
+            Applying SEO, content strategy and analytics fundamentals directly
+            to live brand performance.
+          </li>
+        </ul>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="block" aria-labelledby="edu-heading">
+        <h2 id="edu-heading" class="section-title">
+          <i class="fas fa-graduation-cap"></i> Education
+        </h2>
+        <div class="edu-grid">
+          <article class="edu-card">
+            <h3>MBS — Master of Business Studies <span class="div">(1st Div.)</span></h3>
+            <p class="edu-school">Virtual University of Pakistan</p>
+            <p class="edu-date">2016 – 2018</p>
+          </article>
+          <article class="edu-card">
+            <h3>BA — Business Studies &amp; English <span class="div">(2nd Div.)</span></h3>
+            <p class="edu-school">Allama Iqbal Open University, Islamabad</p>
+            <p class="edu-date">2010 – 2011</p>
+          </article>
+          <article class="edu-card">
+            <h3>D.Com — Commerce <span class="div">(1st Div.)</span></h3>
+            <p class="edu-school">GCMS Sangota, Swat</p>
+            <p class="edu-date">2008 – 2009</p>
+          </article>
+          <article class="edu-card">
+            <h3>SSC — Science <span class="div">(1st Div.)</span></h3>
+            <p class="edu-school">BISE Swat</p>
+            <p class="edu-date">2005 – 2006</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section class="block" aria-labelledby="cert-heading">
+        <h2 id="cert-heading" class="section-title">
+          <i class="fas fa-certificate"></i> Certifications &amp; Training
+        </h2>
+        <ul class="cert-list">
+          <li><i class="fas fa-award"></i> Fundamentals of Digital Marketing — Google Skillshop (2026)</li>
+          <li><i class="fas fa-award"></i> Responsive Web Design (in progress) — FreeCodeCamp (2026)</li>
+          <li><i class="fas fa-award"></i> Sales Management Foundations — LinkedIn Learning</li>
+          <li><i class="fas fa-award"></i> Full Stack Web Development — Udemy (continued)</li>
+          <li><i class="fas fa-award"></i> Sales Team Training 2018 — OBS Pakistan, Karachi</li>
+          <li><i class="fas fa-award"></i> Field Force Development Program-1 — CCL Pharmaceuticals, Lahore (Mar 2014)</li>
+          <li><i class="fas fa-award"></i> Participation in Assessment Centre — Aspin (an OBS Company), Islamabad (Jan 2020)</li>
+        </ul>
+      </section>
+
+      <!-- ACHIEVEMENTS -->
+      <section class="block" aria-labelledby="ach-heading">
+        <h2 id="ach-heading" class="section-title">
+          <i class="fas fa-trophy"></i> Key Achievements
+        </h2>
+        <ul class="cert-list">
+          <li><i class="fas fa-star"></i> Three internal promotions in five years at OBS Pakistan, culminating in an Area Sales Manager role.</li>
+          <li><i class="fas fa-star"></i> National rank #2 across OBS Pakistan in 2015–16; rewarded with a 3-day family trip to PC Bhurban.</li>
+          <li><i class="fas fa-star"></i> Launched two blockbuster cardio-metabolic brands (C-Yalta, Xovat) that now outsell established competitors in Mingora.</li>
+          <li><i class="fas fa-star"></i> Built and runs the live Facebook, Instagram and website presence for a health-supplement brand using organic content strategies.</li>
+        </ul>
+      </section>
 
       <!-- PROJECTS -->
-      <h2 class="section-title"><i class="fas fa-code"></i> My Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="Assets/images/Movie-ranking.png" alt="Movie Ranking" />
-          <div class="project-info">
-            <h3>Movie Ranking</h3>
-            <p>A curated list of top movies with ratings and reviews.</p>
-            <a href="Public/Movie-ranking.html" class="project-link">View Project →</a>
-          </div>
+      <section class="block" aria-labelledby="projects-heading">
+        <h2 id="projects-heading" class="section-title">
+          <i class="fas fa-code"></i> My Projects
+        </h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <img src="Assets/images/Movie-ranking.png" alt="Movie Ranking project preview" />
+            <div class="project-info">
+              <h3>Movie Ranking</h3>
+              <p>A curated list of top movies with ratings and reviews.</p>
+              <a href="Public/Movie-ranking.html" class="project-link"
+                >View Project →</a
+              >
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="Assets/images/Birthday-invite.png" alt="Birthday Invite project preview" />
+            <div class="project-info">
+              <h3>Birthday Invite</h3>
+              <p>An interactive birthday invitation with RSVP details.</p>
+              <a href="Public/Birthday-invite.html" class="project-link"
+                >View Project →</a
+              >
+            </div>
+          </article>
         </div>
-        <div class="project-card">
-          <img src="Assets/images/Birthday-invite.png" alt="Birthday Invite" />
-          <div class="project-info">
-            <h3>Birthday Invite</h3>
-            <p>An interactive birthday invitation with RSVP functionality.</p>
-            <a href="Public/Birthday-invite.html" class="project-link"
-              >View Project →</a
-            >
-          </div>
-        </div>
-      </div>
+      </section>
 
       <!-- SKILLS -->
-      <h2 class="section-title"><i class="fas fa-rocket"></i> Skills</h2>
-      <div class="skills">
-        <span class="skill-tag">HTML5</span>
-        <span class="skill-tag">CSS3</span>
-        <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">React</span>
-        <span class="skill-tag">Node.js</span>
-        <span class="skill-tag">Git</span>
-        <span class="skill-tag">VS Code</span>
-        <span class="skill-tag">Responsive Design</span>
-      </div>
+      <section class="block" aria-labelledby="skills-heading">
+        <h2 id="skills-heading" class="section-title">
+          <i class="fas fa-rocket"></i> Core Competencies
+        </h2>
+
+        <h3 class="sub-heading">Digital &amp; Online</h3>
+        <div class="skills">
+          <span class="skill-tag">SEO</span>
+          <span class="skill-tag">Social Media Marketing</span>
+          <span class="skill-tag">Google Ads (fundamentals)</span>
+          <span class="skill-tag">Content Strategy</span>
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">Responsive Web Design</span>
+          <span class="skill-tag">Email &amp; WhatsApp Marketing</span>
+          <span class="skill-tag">Analytics &amp; Reporting</span>
+        </div>
+
+        <h3 class="sub-heading">Sales &amp; Commercial</h3>
+        <div class="skills">
+          <span class="skill-tag">Field Sales</span>
+          <span class="skill-tag">Key Account Management</span>
+          <span class="skill-tag">Territory Management</span>
+          <span class="skill-tag">Product Launches</span>
+          <span class="skill-tag">Brand Promotion</span>
+          <span class="skill-tag">Sales Forecasting</span>
+          <span class="skill-tag">P&amp;L Ownership</span>
+          <span class="skill-tag">Channel Development</span>
+        </div>
+
+        <h3 class="sub-heading">Leadership &amp; Tools</h3>
+        <div class="skills">
+          <span class="skill-tag">Team Building</span>
+          <span class="skill-tag">Sales Training</span>
+          <span class="skill-tag">Performance Coaching</span>
+          <span class="skill-tag">SWOT &amp; Competitor Analysis</span>
+          <span class="skill-tag">Microsoft Office</span>
+          <span class="skill-tag">Google Workspace</span>
+          <span class="skill-tag">CRM Discipline</span>
+        </div>
+      </section>
+
+      <!-- LANGUAGES -->
+      <section class="block" aria-labelledby="lang-heading">
+        <h2 id="lang-heading" class="section-title">
+          <i class="fas fa-language"></i> Languages
+        </h2>
+        <div class="skills">
+          <span class="skill-tag"><strong>Pashto</strong> — Native</span>
+          <span class="skill-tag"><strong>Urdu</strong> — Fluent</span>
+          <span class="skill-tag"><strong>English</strong> — Professional working proficiency</span>
+        </div>
+      </section>
 
       <!-- CONTACT -->
-      <div class="contact-section">
-        <h2>Let's Work Together!</h2>
-        <p>Have a project in mind? I'd love to hear about it.</p>
-        <a href="Public/contact.html" class="nav-btn"
-          ><i class="fas fa-envelope"></i> Get in Touch</a
-        >
-      </div>
+      <section class="contact-section" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Let's Work Together!</h2>
+        <p>
+          Have a project in mind — or want to talk sales, marketing or brand
+          growth? I'd love to hear about it.
+        </p>
+        <a href="Public/contact.html" class="nav-btn">
+          <i class="fas fa-envelope"></i> Get in Touch
+        </a>
+      </section>
 
-      <!-- SOCIAL LINKS -->
+      <!-- SOCIAL -->
       <div class="social-links">
         <a
           href="https://www.linkedin.com/in/abdullah-jelani-1249b9ba"
           target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn profile"
           ><i class="fab fa-linkedin"></i
         ></a>
-        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:abdullah.jelani20@gmail.com"
+        <a
+          href="https://github.com/AbdullahJelani"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub profile"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="mailto:abdullah.jelani20@gmail.com" aria-label="Email Abdullah"
           ><i class="fas fa-envelope"></i
         ></a>
       </div>
 
       <!-- FOOTER -->
-      <div class="footer">
-        <p>&copy; 2026 Abdullah. All rights reserved.</p>
-      </div>
+      <footer class="footer">
+        <p>&copy; 2026 Abdullah Jelani. All rights reserved.</p>
+        <p class="muted">Swat, KPK, Pakistan &middot; Built with HTML5 &amp; CSS3</p>
+      </footer>
     </div>
   </body>
 </html>
