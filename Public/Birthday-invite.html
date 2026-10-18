@@ -1,17 +1,94 @@
-<!-- This is one possible solution -->
-<h1>It's My Birthday!</h1>
-<h2>On the 15th March</h2>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="It's Abdullah's Birthday — a small interactive invite page." />
+    <title>It's My Birthday — Abdullah</title>
+    <link rel="icon" type="image/jpeg" href="../Assets/images/my-pic.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../Assets/css/style.css" />
+    <style>
+      .cake-img {
+        width: 100%;
+        max-width: 420px;
+        border-radius: var(--radius-md);
+        margin: 20px auto;
+        display: block;
+        box-shadow: var(--shadow-md);
+      }
+      .invite-list {
+        background: var(--c-bg-soft);
+        border-left: 4px solid var(--c-primary);
+        border-radius: 8px;
+        padding: 16px 20px 16px 40px;
+        margin: 12px auto;
+        max-width: 480px;
+        color: var(--c-text-soft);
+      }
+      .invite-list li {
+        margin-bottom: 6px;
+      }
+      .map-link {
+        display: inline-block;
+        margin-top: 12px;
+        color: var(--c-primary);
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container" style="max-width: 720px;">
+      <header class="header">
+        <h1><i class="fas fa-birthday-cake"></i> It's My Birthday!</h1>
+        <p class="title">On the 15<sup>th</sup> of March</p>
+        <p class="tagline">You're invited — come for cake, stay for the stories.</p>
+      </header>
 
-<img src="https://raw.githubusercontent.com/appbrewery/webdev/main/birthday-cake3.4.jpeg"
-  alt="purple birthday cake with candles" />
+      <section class="text-center">
+        <img
+          src="https://raw.githubusercontent.com/appbrewery/webdev/main/birthday-cake3.4.jpeg"
+          alt="Purple birthday cake with candles"
+          class="cake-img"
+        />
+      </section>
 
-<h3>What to bring:</h3>
-<ul>
-  <li>Baloons (I love baloons)</li>
-  <li>Cake (I'm really good at eating)</li>
-  <li>An appetite (There will be lots of food)</li>
-</ul>
+      <section>
+        <h3 class="sub-heading">
+          <i class="fas fa-gift"></i> What to bring
+        </h3>
+        <ul class="invite-list">
+          <li>Balloons (I love balloons)</li>
+          <li>Cake (I'm really good at eating)</li>
+          <li>An appetite (there will be lots of food)</li>
+        </ul>
 
-<h3>This is where you need to go:</h3>
-<a
-  href="https://www.google.com/maps/place/Jahanabad+Buddha/@34.8113853,72.4648614,17z/data=!3m1!4b1!4m6!3m5!1s0x38dc3b26679b3a17:0x7c300e7959411b63!8m2!3d34.8113809!4d72.4674363!16s%2Fg%2F11xm8v464?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps Link"</a>
+        <h3 class="sub-heading">
+          <i class="fas fa-map-marker-alt"></i> Where to go
+        </h3>
+        <p class="text-center">
+          <a
+            href="https://www.google.com/maps/place/Jahanabad+Buddha/@34.8113853,72.4648614,17z/data=!3m1!4b1!4m6!3m5!1s0x38dc3b26679b3a17:0x7c300e7959411b63!8m2!3d34.8113809!4d72.4674363!16s%2Fg%2F11xm8v464?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener"
+            class="map-link"
+            >📍 Open in Google Maps →</a
+          >
+        </p>
+      </section>
+
+      <div class="text-center">
+        <a href="../index.html" class="back-btn" aria-label="Back to home">
+          <i class="fas fa-arrow-left"></i> Back to Portfolio
+        </a>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2026 Abdullah Jelani. All rights reserved.</p>
+      </footer>
+    </main>
+  </body>
+</html>
