@@ -1,85 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Abdullah</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="About Abdullah Jelani — sales leader, web developer and digital marketer from Swat, Pakistan." />
+    <title>About — Abdullah Jelani</title>
+    <link rel="icon" type="image/jpeg" href="../Assets/images/my-pic.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../Assets/css/style.css" />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 40px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .container {
-            max-width: 700px;
-            background: white;
-            border-radius: 20px;
-            padding: 50px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-        }
-
-        h1 {
-            color: #667eea;
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .about-content {
-            color: #2d3748;
-            line-height: 1.8;
-            font-size: 1.1rem;
-        }
-
-        .about-content p {
-            margin-bottom: 15px;
-        }
-
-        .back-btn {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 500;
-            margin-top: 30px;
-            transition: background 0.3s ease;
-        }
-
-        .back-btn:hover {
-            background: #5a67d8;
-        }
-
-        .text-center {
-            text-align: center;
-        }
+      /* Page-specific tweaks */
+      body {
+        align-items: flex-start;
+      }
+      .about-content {
+        color: var(--c-text);
+        line-height: 1.8;
+        font-size: 1.05rem;
+      }
+      .about-content p {
+        margin-bottom: 14px;
+      }
     </style>
-</head>
-<body>
-    <div class="container">
+  </head>
+  <body>
+    <main class="container" style="max-width: 820px;">
+      <header class="header">
+        <img
+          src="../Assets/images/my-pic.jpg"
+          alt="Abdullah Jelani"
+          class="profile-img"
+        />
         <h1>About Me</h1>
-        <div class="about-content">
-            <p>👋 Hi! I'm Abdullah, a passionate and enthusiastic web developer/digital marketer from Swat, Pakistan. I've done MBA from Virtual University of Pakistan and working as a pharmaceutical sales manager from twelve years. I want to transition into web development and leverage my marketing experience to create impactful digital solutions.</p>
-            <p>💻 I love creating beautiful, functional websites and web applications that solve real problems.</p>
-            <p>🎯 My goal is to combine creativity with technical skills to build exceptional digital experiences.</p>
-            <p>🌱 I'm constantly learning and exploring new technologies to stay at the forefront of web development.</p>
-            <p>🤝 I'm always open to collaborating on interesting projects and connecting with fellow developers.</p>
+        <p class="title">Digital Marketing · Sales · Brand Growth</p>
+      </header>
+
+      <section class="about-content">
+        <p>
+          👋 Hi, I'm <strong>Abdullah Jelani</strong> — a sales leader, web
+          developer and digital marketer from Swat, Pakistan. I hold an MBS
+          (Master of Business Studies) from Virtual University of Pakistan and
+          have spent 12+ years building pharmaceutical brands across
+          cardio-metabolic and consumer health portfolios.
+        </p>
+        <p>
+          💻 I'm now investing that commercial experience into web development
+          and digital marketing — with active certifications from Google
+          Skillshop and FreeCodeCamp, and a live portfolio managing organic
+          Facebook, Instagram and website presence for a health brand.
+        </p>
+        <p>
+          🎯 My goal is to combine sharp commercial instincts with new digital
+          skills to drive measurable brand and pipeline growth.
+        </p>
+        <p>
+          🌱 I'm constantly learning — currently progressing through the
+          FreeCodeCamp Responsive Web Design curriculum while shipping real
+          campaigns for a live client.
+        </p>
+        <p>
+          🤝 I'm always open to collaborating on interesting projects and
+          connecting with fellow developers, marketers and sales professionals.
+        </p>
+      </section>
+
+      <section class="block" style="margin-top: 30px;">
+        <h2 class="section-title">
+          <i class="fas fa-bullseye"></i> What I'm Looking For
+        </h2>
+        <ul class="focus-list">
+          <li>
+            <strong>Primary:</strong> Field Sales &amp; Area Management roles
+            (B2B, pharma, FMCG, channel sales).
+          </li>
+          <li>
+            <strong>Secondary:</strong> Digital Marketing &amp; Digital Sales
+            roles (SEO, social media, paid ads, content, analytics).
+          </li>
+          <li>
+            <strong>Tertiary:</strong> Sales Operations, Business Development
+            and Sales Training.
+          </li>
+        </ul>
+      </section>
+
+      <section class="block">
+        <h2 class="section-title">
+          <i class="fas fa-graduation-cap"></i> Education
+        </h2>
+        <div class="edu-grid">
+          <article class="edu-card">
+            <h3>MBS — Master of Business Studies <span class="div">(1st Div.)</span></h3>
+            <p class="edu-school">Virtual University of Pakistan</p>
+            <p class="edu-date">2016 – 2018</p>
+          </article>
+          <article class="edu-card">
+            <h3>BA — Business Studies &amp; English <span class="div">(2nd Div.)</span></h3>
+            <p class="edu-school">Allama Iqbal Open University, Islamabad</p>
+            <p class="edu-date">2010 – 2011</p>
+          </article>
+          <article class="edu-card">
+            <h3>D.Com — Commerce <span class="div">(1st Div.)</span></h3>
+            <p class="edu-school">GCMS Sangota, Swat</p>
+            <p class="edu-date">2008 – 2009</p>
+          </article>
+          <article class="edu-card">
+            <h3>SSC — Science <span class="div">(1st Div.)</span></h3>
+            <p class="edu-school">BISE Swat</p>
+            <p class="edu-date">2005 – 2006</p>
+          </article>
         </div>
-        <div class="text-center">
-            <a href="index.html" class="back-btn">← Back to Portfolio</a>
+      </section>
+
+      <section class="block">
+        <h2 class="section-title">
+          <i class="fas fa-language"></i> Languages
+        </h2>
+        <div class="skills">
+          <span class="skill-tag"><strong>Pashto</strong> — Native</span>
+          <span class="skill-tag"><strong>Urdu</strong> — Fluent</span>
+          <span class="skill-tag"><strong>English</strong> — Professional working proficiency</span>
         </div>
-    </div>
-</body>
+      </section>
+
+      <div class="text-center">
+        <a href="../index.html" class="back-btn" aria-label="Back to home">
+          <i class="fas fa-arrow-left"></i> Back to Portfolio
+        </a>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2026 Abdullah Jelani. All rights reserved.</p>
+      </footer>
+    </main>
+  </body>
 </html>
